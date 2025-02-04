@@ -1,0 +1,21 @@
+{{#if error}}
+{{#each error}}
+{{#if categoryname}}
+     <div class="alert alert-danger alert-dismissible fade show" role="alert"> 
+      {{categoryname.msg}}
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+     </div>
+{{/if}}
+{{/each}}
+{{/if}}
+
+
+
+<form method="post" action="/admin/category/">
+  <div class="mb-3">
+    <label for="category" class="form-label">Category name</label>
+    <input type="text" class="form-control" id="category" name="categoryname" >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+

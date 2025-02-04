@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      {{#each cart}}
+      <div class="border p-3x card mt-3">
+        <div class="d-flex justify-content-between">
+          <div class="d-flex">
+            <img src="/static/image/{{this.image}}" height="50">
+            <h4>{{this.product_name}}</h4>
+          </div>
+          <div>
+              <a href="/cart/delete/{{this.id}}" class="btn btn-primary">
+              <i class="fa fa-trash"></i>
+              </a>
+
+            
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-md-4">
+            <p> Price </p>
+            <p> {{this.price}}</p>
+          </div>
+          <div class="col-md-4">
+            <p>Qty</p>
+            <div class="d-flex justify-content-around">
+              <a href="/cart/add/{{this.id}}" class="btn btn-primary">+</a>
+              <span>{{this.qty}}</span>
+              <a href="/cart/sub/{{this.id}}" class="btn btn-primary">-</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <p>Total</p>
+            <p>{{getTotal this.qty this.price}}</p>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+    <div class="col-md-3"></div>
+  </div>
+</div>
+
+<center>
+  {{#if isLogin }}
+  <a class="btn btn-primary" href="/order">Place</a>
+  {{else}}
+  <button>Please Login to palce order</button>
+  {{/if}}
+</center>

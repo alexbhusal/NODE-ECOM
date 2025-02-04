@@ -1,0 +1,34 @@
+{{log data}}
+<form method="post" action="/admin/product/update/{{data.id}}">
+  <fieldset>
+   <div class="mb-3">
+      <label for="productname" class="form-label">Product Name</label>
+      <input name="productname" type="text" id="productname" class="form-control" placeholder="enter product name" value="{{data.productname}}">
+   </div>
+
+   <div class="mb-3">
+      <label for="productprice" class="form-label">Product Price</label>
+      <input name="productprice" type="text" id="productprice" class="form-control" placeholder="enter product price" value="{{data.productprice}}">
+   </div>
+    
+   {{!-- <div class="mb-3">
+     <select class="form-select" aria-label="Default select example">
+      {{#each category}}
+      <option value={{this.id}} {{#isEq ../data.category_id this.id}} selected {{/isEq}}>{{this.categoryname}}</option>
+       {{/each}}
+    </select>
+   </div> --}}
+
+   <div class="mb-3">
+      <label for="productdescription" class="form-label">Product Description</label>
+      <textarea name="productdescription" type="text" id="productdescription" class="form-control" value="{{data.productdescription}}"></textarea>
+   </div>
+
+   {{!-- <div class="mb-3">
+      <label for="productimage" class="form-label">Product Image</label>
+      <input type="file" id="productimage" name="productimage" class="form-control" accept="">
+   </div> --}}
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+ </fieldset>
+</form>

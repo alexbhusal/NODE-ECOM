@@ -1,0 +1,8 @@
+{{log data}}
+<form action="/admin/category/update/{{data.id}}" method = "post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Category name</label>
+          <input type="text" value="{{data.categoryname}}" name="categoryname" "form-control" id="category">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+</form>

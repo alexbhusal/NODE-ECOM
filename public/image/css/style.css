@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+/* General styling */
+body {
+    font-family: "Inria Sans", sans-serif; /* Applying the "Inria Sans" font family */
+    background-color: #E3FEF7;
+    margin: 0;
+    padding: 20px;
+    /* background-image: url(https://img.freepik.com/free-psd/shopping-vertical-background_23-2150409479.jpg?t=st=1712798427~exp=1712802027~hmac=7bdc3d025c6ea256d79919be5024c6bb924537dabaa0bea72ecb0fb5c301d3d1&w=360);
+    background-size: cover; */
+
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  /* Style for item container */
+  .item-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    margin: auto;
+  }
+  
+  /* Style for item image */
+  .item-image {
+    width: 250px;
+    height: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for item image */
+  .item-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Style for item details */
+  .item-details {
+    padding: 20px;
+  }
+  
+  /* Style for item name */
+  .item-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for item price */
+  .item-price {
+    font-size: 18px;
+    color: #135D66; /* Primary color */
+    margin-bottom: 10px;
+  }
+  
+  /* Style for item description */
+  .item-description {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.4;
+  }
+  
+  /* Style for add to cart button */
+  .add-to-cart-btn {
+    background-color: #135D66; /* Primary color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for add to cart button */
+  .add-to-cart-btn:hover {
+    background-color: #77B0AA; 
+  }
+  
+.items-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    row-gap: 60px;
+}
+#role{
+  text-align: center;
+  margin: 0 600px 0 0px;
+}
+
+.adlog{
+  margin: 0 0 0 550px;
+  
+}

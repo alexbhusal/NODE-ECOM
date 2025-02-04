@@ -1,0 +1,22 @@
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">SN</th>
+            <th scope="col">Category name</th>
+            <th colspan="2">Action</th>
+        </tr>
+    </thead>
+    <tbody>
+    {{#each data}}
+    <tr>
+
+      <td>{{inc @index}}</td>
+      <td>{{categoryname}}</td>
+      <td>
+        <a href="/admin/category/delete/{{id}}">Delete</a/>&emsp;&emsp;
+        <a href="/admin/category/edit/{{id}}">Edit</a></td>
+    </tr>
+   {{/each}}
+  </tbody>
+</table>

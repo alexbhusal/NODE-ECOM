@@ -1,0 +1,15 @@
+<div class="row">
+{{#each data}}
+  <div class="col-md-3">
+    <div class="item-container">
+    <img class="item-image" src="/static/image/{{productimage}}">
+    <div class="item-details">
+      <div class="item-name"> {{productname}}</div>
+      <div class="item-price"> Rs.{{productprice}}</div>
+      <div class="item-description"> {{productdescription}}</div>
+      <a class="add-to-cart-btn" href="/cart/{{id}}" >Add to Cart</a>
+    </div>
+  </div>
+  </div>
+{{/each}}
+</div>
